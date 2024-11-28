@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contosco Music</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/css/styles.css">
+    <style>
+        .pagination {
+            display: flex;
+            justify-content: center;
+            margin-top: 20px;
+        }
+        .page-link {
+            margin: 0 5px;
+            padding: 10px 15px;
+            border: 1px solid #ddd;
+            color: #007bff;
+            text-decoration: none;
+        }
+        .page-link.active {
+            background-color: #007bff;
+            color: white;
+            border-color: #007bff;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1 class="my-4">Welcome to Contosco Music</h1>
+        <ul class="nav nav-tabs" id="myTab" role="tablist">
+            <li class="nav-item">
+                <a class="nav-link active" id="artists-tab" data-toggle="tab" href="#artists" role="tab" aria-controls="artists" aria-selected="true">Artists</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" id="albums-tab" data-toggle="tab" href="#albums" role="tab" aria-controls="albums" aria-selected="false">Albums</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" id="playlists-tab" data-toggle="tab" href="#playlists" role="tab" aria-controls="playlists" aria-selected="false">Playlists</a>
+            </li>
+        </ul>
+        <div class="tab-content" id="myTabContent">
+            <div class="tab-pane fade show active" id="artists" role="tabpanel" aria-labelledby="artists-tab">
+                <div id="artists-content" class="mt-4"></div>
+            </div>
+            <div class="tab-pane fade" id="albums" role="tabpanel" aria-labelledby="albums-tab">
+                <div id="albums-content" class="mt-4"></div>
+            </div>
+            <div class="tab-pane fade" id="playlists" role="tabpanel" aria-labelledby="playlists-tab">
+                <div id="playlists-content" class="mt-4"></div>
+            </div>
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="/js/app.js"></script>
+</body>
+</html>
