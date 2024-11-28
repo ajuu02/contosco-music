@@ -1,7 +1,7 @@
 # Step 1: Clear npm Cache
 Clear the npm cache:
 # Step 2: Delete node_modules and package-lock.json
-Delete the node_modules directory and package-lock.json file:
+<b> rm -rf node_modules package-lock.json
 # Step 3: Reinstall Dependencies
 # Reinstall the dependencies:
 -- npm install
